@@ -1,0 +1,76 @@
+/* Css Grid
+Modul CSS baru untuk mendefinisikan sistem layout berbentuk 
+grid dalam 2 dimensi (baris & Kolom)
+membutuhan -> display: grid
+
+Kenapa CSS Grid?
+Untuk membuat display yang lebih komplex */
+
+
+/* Style tanpa flex dan grid */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: snow;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    border: 5px solid #333;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+header {
+    padding: 40px 0;
+    background-color: plum;
+}
+
+/* Content */
+.content {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar aside {
+    background-color: royalblue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar nav {
+    background-color: salmon;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: sandybrown;
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: slategray;
+    padding: 20px 0;
+}

@@ -1,0 +1,30 @@
+/* Value dan Unit
+-Integer    :Bil bulat(+/-)
+-number     :Bil pecahan(+/-)
+-percentage :Merepresentasikan sebagian dari nilai tertentu 
+(%), relatif terhadap nilai lain
+-dimension  :Number yg memiliki satuan di belakangnya */
+
+/* Dimension
+-Angle      :deg(derajat), rad(radian), grad(gradian), 
+turn(berapa putaran)
+-Time       :s, ms
+-Resolution :dpi(dot per inch), dpcm(dot per centimeter),
+dppx(dot per pixel)
+
+dimension-length
+-Absolute   :px, pt, pc, cm, mm, in
+-Relative
+.% :persentase ukuran relatif terhadap ukuran elemen parent
+.em :relatif terhadap ukuran font yang sedang digunakan
+.rem :relatif terhadap ukuran font "root" / <html>
+.ch :relatif terhadap lebar karakter "0" dari font yang sedang
+digunakan
+.vh :relatif terhadap tinggi dari viewport
+.vw :relatif terhadap lebar dari viewport
+.vmin :relatif terhadap dimensi terkecil sebuah viewport
+.vmax :relatif terhadap dimensi terbesar sebuah viewport
+
+viewport :ukuran dari layar
+1vh = 1% viewport
+100vh = 100% viewport */

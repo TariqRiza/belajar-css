@@ -1,0 +1,46 @@
+ /* Terdapat juga grid
+shorthand untuk mendefinisikan properti-properti berikut dalam 
+satu deklarasi:
+grid-template-rows, grid-template-columns, grid-template-areas, 
+grid-auto-rows, grid-auto-columns, grid-auto-flow */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 90%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    grid-gap: 5px */
+
+    /* column-gap: 5px;
+    row-gap: 10px; */
+    gap: 10px;
+}
+
+.item {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}
+
+
+
+/* Responsive Breakpoint */
+@media screen and (min-width: 576px) {
+    
+}

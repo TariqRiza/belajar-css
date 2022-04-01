@@ -1,0 +1,16 @@
+/* Setiap deklarasi css(selector) memiliki berat yang berbeda.
+Berat tersebut menentukan seberapa spesifik sebuah elemen
+dapat dipilih oleh selector */
+/* http://specificity.keegan.st */
+
+#p1 { color: red;}
+
+p {color: green;}
+
+ul#sarapan li {
+    color: green;
+}
+
+ul#sarapan li.favorit {
+    color: red;
+}

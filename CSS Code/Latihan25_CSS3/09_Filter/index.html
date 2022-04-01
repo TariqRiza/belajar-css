@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        /* Filter
+        blur(px)
+        brightness(angka | %)
+        contrast(angka | %)
+        saturate(angka | %)
+        grayscale(angka | %)
+        sepia(angka | %)
+        hue-rotate(deg)
+        invert(angka | %)
+        opacity(angka | %)
+        drop-shadow(sama seperti box-shadow)-> bisa diimplementasikan untuk
+        gambar maupun text
+        
+        menggunakan filter lebih cepat dibandingkan dengan syntax opacity
+        dan box-shadow karena menggunakan hardware komputer bukan kekuatan
+        browser. tetapi masih experimental(belum support semua)
+        selain itu juga memberi bayangan pada gambar png (bukan transparan) */
+        h1 {
+            filter: drop-shadow(5px 5px 2px green);
+        }
+        img {
+            width: 450px;
+            
+            filter: blur(5px)  hue-rotate(-100deg) drop-shadow(5px 5px 5px black);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pemrograman WEB</h1>
+    <img src="Portrait_2.png" alt="Tariq Riza">
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        /* Properti transform
+        scale(angka), scaleX(angka), scaleY(angka) -> mengubah ukuran
+        rotate(deg), rotateX(deg), rotateY(deg) -> memutar
+        skew(deg), skewX(deg), skewY(deg) -> membuat condong / miring
+        translate(px), translateX(px), translateY(px) -> mengubah posisi
+         */
+        .kotak {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            background-color: lightblue;
+            margin: 50px auto 0;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+
+        .kotak:hover {
+            transform: scale(.5) rotate(360deg) skewX(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"> Kotaks</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, est! Autem qui enim velit iure in eaque, odit, dolorem tempora ea totam ad, quae cupiditate maxime hic doloribus neque dicta?</p>
+</body>
+</html>

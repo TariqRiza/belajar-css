@@ -1,0 +1,50 @@
+/* Default display
+<div></div>     : block
+<span></span>   : inline
+
+properti display pada mengatur perilaku kotak
+(setiap tag HTMl berada di dalam kotak)
+setiap tag memiliki nilai default displaynya
+
+Nilai display
+1.inline
+-Elemen HTML yang secara default tidak menambahkan baris baru 
+ketika dibuat
+-lebar dan tinggi elemen sebesar konten yang ada didalamnya
+-kita tidak dapat mengatur tinggi dan lebar dari elemen inline
+-margin dan padding hanya mempengaruhi elemen secara horizontal
+
+2.inline-block
+-Tidak ada elemen yang secara default inline-block displaynya
+-Kita harus ubah manual properti tersebut
+-Perilaku dasarnya sama dengan inline
+-inline-block dapat diatur tinggi dan lebarnya
+
+3.block
+-Elemen yang secara default menambah baris baru ketika dibuat
+-Jika tidak diatur lebarnya, maka lebarnya secara default
+akan memenuhi lebar browser/parent-nya
+-Tinggi dan lebar dapat diatur
+-Di dalam elemen block, kita dapat menyimpan tag dengan elemen
+inline. inline-block, bahkan elemen block lagi
+
+4.none
+-digunakan untuk menghilangkan sebuah elemen */
+
+.navigasi li{
+    background-color: greenyellow;
+    display : inline;
+}
+
+.main {
+    background-color: lightskyblue;
+    width: 500px;
+}
+
+.main h2 {
+    background-color: pink;
+}
+
+.main span {
+    background-color: peru;
+}

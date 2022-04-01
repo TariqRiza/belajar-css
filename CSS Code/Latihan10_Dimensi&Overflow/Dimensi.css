@@ -1,0 +1,28 @@
+/* Satuan width & Height
+px  : absolut
+%   : relatif terhadap parent
+in, cm, mm, pt(point), pc(pica) : satuan real life */
+
+/* value overflow (mengatur elemen yang keluar dari parentnya)
+visible > default, konten overflow diperlihatkan
+auto    > menambah scroll jika ada overflow
+hidden  > konten disembunyikan
+scroll  > memunculkan scroll, tapi scroll tetap ada */
+
+.satu {
+    width: 200px;
+    height: 50px;
+    background-color: pink;
+}
+
+.dua {
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.konten {
+    width: 200px;
+    height: 100px;
+    background-color: antiquewhite;
+    overflow: auto;
+}

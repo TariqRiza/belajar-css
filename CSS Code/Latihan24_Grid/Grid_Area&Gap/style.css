@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 80%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Mendifinisikan grid template menggunakan nama dari area
+    yang ditulis pada property grid-area pada item */
+    grid-template-areas: 
+        'header header header'
+        'sidebar sidebar sidebar'
+        'content content content'
+        'footer footer footer';
+}
+
+.item {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+/* .item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+} */
+
+.header {
+    grid-area: header;
+    background: lightblue;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(255, 255, 188);
+}
+
+.content {
+    grid-area: content;
+    background-color: rgb(177, 255, 177);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(57, 57, 57);
+}
+
+/* Responsive Breakpoint */
+@media screen and (min-width: 576px) {
+    .container {
+        /* Mendifinisikan grid template menggunakan nama dari area
+        yang ditulis pada property grid-area pada item */
+        grid-template-areas: 
+            'header header header'
+            'sidebar content content'
+            'sidebar content content'
+            'footer footer footer';
+    }
+}

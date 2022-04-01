@@ -1,0 +1,20 @@
+/* Background
+background-color    : mengatur warna
+background-image    : mengatur gambar
+background-position : mengatur posisi gambar
+background-repeat   : mengatur jenis pengulangan pada gambar */
+
+/* background-position
+top left, top center, top right, center center, center right
+bottom left dll, x% y%, x-pos y-pos */
+
+/* Shorthand
+background: (color) (image) position repeat 
+background: lavender url(bg.png) top left no-repeat */
+
+body {
+    background-color: lightsteelblue;
+    background-image: url(Gambar/Gambar1.png);
+    background-repeat: no-repeat; 
+    background-position: bottom center;
+}

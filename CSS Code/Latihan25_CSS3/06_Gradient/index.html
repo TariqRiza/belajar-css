@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        div {
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+        }
+        .linear {
+            /* background, background-image:
+            linear-gradient(<sudut> | <arah>, <warna-1>, <warna-2>,..., <warna-n>)
+            arah: to + bottom, top, left, right,
+            left top, left bottom, right top, right bottom */
+            background: linear-gradient(to right, skyblue 63%, lavender 80%);
+        }
+
+        .radial {
+            /*background-image:
+            tipe -> ellipse & circle
+            jangkauan -> jarak pusat gradient ke sisi terluar-nya
+            -closest-corner(ke sudut terdekat elemen)
+            -closest-side(ke sisi terdekat elemen)
+            -farthest-corner(ke sudut terjauh elemen)
+            -farthest-side(ke sisi terjauh elemen)
+            posisi -> memindahkan pusat gradient
+            -posis -y(top, center, bottom, px)
+            -posisi-x(left, center, right, px)
+
+            linear-gradient(
+                <tipe> <jangkauan> at <posisi-y> <posisi-x>
+                <warna-1>,
+                <warna-2>,
+                ....,
+                <warna-n)*/
+            background-image: radial-gradient(circle farthest-side at top left, salmon, skyblue, lightgreen);
+        }
+    </style>
+</head>
+<body>
+    <div class="linear"></div>
+    <div class="radial"></div>
+</body>
+</html>

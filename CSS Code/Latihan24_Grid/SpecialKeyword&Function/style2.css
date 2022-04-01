@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    /* Min-content(kata-kata dipecah)
+    max-content(satu baris diisi tanpa ke bawah */
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+.item {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: salmon;
+}

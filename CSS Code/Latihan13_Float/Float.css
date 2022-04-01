@@ -1,0 +1,55 @@
+/* Float
+properti css berfungsi mengatur posisi sebuah elemen. Sebuah
+elemen dapat dipaksa untuk berada di sebelah kiri atau kanan
+dari parentnya
+
+value : none, left, right */
+
+/* normal flow
+elemen dengan display: block akan berada dibawah elemen
+sebelumnya. sedangkan dengan display: inline berada di kanan
+elemen sebelumnya
+
+float berada di out-of flow */
+
+/* Float digunakan saat
+-text wraping : membuat text mengelilingi gambar/elemen lain
+-image glaery : membuat serangkaian gambar menjadi galeri
+-multi-column : layout membuat halaman memiliki beberapa kolom */
+
+/* properti clear
+berfungsi menghentikan / membersihkan float
+value left, right, both */
+
+/* Membersihkan float
+-menggunakan property overflow
+-menggunakan <div> kosong dengan properti clear 
+div kosong di taruh setelah elemen yang diberi float
+-menggunakan teknik micro clearfix
+http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.container {
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+}
+
+.satu, .dua, .tiga {
+    width: 100px;
+    height: 100px;
+}
+
+.satu {
+    background-color: salmon;
+}
+
+.dua {
+    background-color: limegreen;
+    float: right;
+}
+
+.tiga {
+    background-color: lightskyblue;
+    float: right;
+}

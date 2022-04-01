@@ -1,0 +1,36 @@
+/* Overlaping margin
+-margin tidak saling menambahkan untuk vertikal
+margin terbesar akan diambil dari beberapa elemen
+-margin akan ditambahkan untuk horizontal margin kiri kanan 
+(inline, inline-block)
+
+negatif margin
+Elemen lain / dibawahnya akan ikut elemen sebelumnya
+
+Margin auto untuk kiri dan kanan
+Akan membuat elemen ditengah parentnya
+
+Shorthand
+margin: semua-sisi
+margin: atas-bawah kiri-kanan
+margin: atas kiri-kanan bawah
+margin: atas kanan bawah kiri */
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin: 10px 20px 30px 40px;
+}
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+}

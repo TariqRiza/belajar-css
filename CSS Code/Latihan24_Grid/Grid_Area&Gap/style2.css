@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 25px auto;
+    display: grid;
+    /* grid-template-rows: [baris1-mulai] 50px [baris1-akhir baris2-awal] 50px [baris2-akhir];
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-areas: 
+        'header header header'
+        'footer footer footer'; */
+    
+    /* Shorthand untuk mendefinisikan grid-template-rows
+    grid-template-columns dan grid-template-areas dalam
+    satu deklarasi
+    grid-template: <grid-template-rows> | <grid-template-areas> / <grid-template-columns; */
+    grid-template: [baris1-mulai] 'header header header' 50px [baris1-akhir baris2-awal] 'footer footer footer' 100px [baris2-akhir] / 1fr 2fr 3fr;
+}
+
+.item {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}
+
+
+
+/* Responsive Breakpoint */
+@media screen and (min-width: 576px) {
+    
+}

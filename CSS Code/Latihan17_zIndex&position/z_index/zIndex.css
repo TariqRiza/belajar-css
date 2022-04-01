@@ -1,0 +1,28 @@
+/* z-index: semakin besar semakin ke depan
+9999(paling depan, -9999(paling belakang)
+digunakan untuk mengatur tumpukan dari elemen yang memiliki
+posisi non-static (relative, absolute, dan fixed) */
+
+div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.satu {
+    background-color: salmon;
+    z-index: -9999;
+}
+
+.dua {
+    background-color: lightgreen;
+    top: 70px;
+    left: 70px;
+    z-index: 2;
+}
+
+.tiga {
+    background-color: royalblue;
+    top: 140px;
+    left: 140px;
+}

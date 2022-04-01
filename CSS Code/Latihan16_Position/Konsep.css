@@ -1,0 +1,15 @@
+/* CSS Position
+Position memungkinkan menggeser elemen tanpa mempengaruhi 
+elemen disekitarnya (keluar dari flow)
+
+properti position
+-static(default)
+-relative
+-absolute
+-fixed
+
+-static adalah nilai default setiap elemen
+-menggunakan selain static(non-static), akan membuat elemen
+menjadi seolah-olah berbeda dimensi dari elemen lainnya
+-elemen yang diberi position selain dapat menggunakan properti
+top, left, bottom, dan right untuk mengatur posisinya*/

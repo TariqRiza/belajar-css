@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    /* repeat(jmlah, nilai) */
+    grid-template-columns: repeat(4, 1fr) repeat(5, 1.5fr);
+
+    /* menentukan seberapa besar ukuran grid tracknya
+    berdasarkan content pada sebuah item */
+}
+
+.item {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: salmon;
+}

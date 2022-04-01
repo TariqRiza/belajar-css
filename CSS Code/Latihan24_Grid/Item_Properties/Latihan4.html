@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid justify/align/place-self</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            /* grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+            grid-template-rows: repeat(3, 100px); */
+
+            grid-template-columns: [satu] minmax(200px,300px) [dua] 1fr [tiga] 1fr [empat];
+            grid-template-rows: [baris1] 100px [baris2] 100px [b-3] 100px [b-4];
+        
+            grid-template-areas:
+                'header header header'
+                'sidebar content content'
+                'footer footer footer';
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .my-item {
+            /* mengatur posisi item pada sebuah cell */
+
+            /* horizontal */
+            /* justify-self: start; */
+            /* justify-self: end; */
+            /* justify-self: center; */
+            /* default */
+            /* justify-self: stretch; */
+
+            /* vertikal */
+            /* align-self: start; */
+            /* align-self: end; */
+            /* align-self: center; */
+            /* default */
+            /* align-self: stretch; */
+
+            /* shorthand
+            place-self: <align-self> <justify-self> */
+            place-self: center;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item my-item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <!-- <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div> -->
+    </div>
+</body>
+</html>

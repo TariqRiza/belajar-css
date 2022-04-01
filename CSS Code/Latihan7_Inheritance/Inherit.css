@@ -1,0 +1,15 @@
+/* Inheritance
+sebuah elemen mewarisi beberapa nilai dari properti 
+yang dimiliki oleh elemen parentnya */
+
+/* Properti yang diwariskan
+color, font, letter-spacing, line-height, list-style,
+text-align, text-indent, text-transform, visibility,
+ white-space */
+
+ body {
+     font-family: Arial;
+     color: darkgray;
+ }
+
+ a { color: inherit;}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Face</title>
+    <style>
+        /* Penulisan @font-face
+        @font-face {
+            font-family: 'namaFontBaru';
+            src: url('lokasi/file/fontBaru.eot');
+            src: url('lokasi/file/fontBaru.eot?#iefix') format('embedded-opentype'),
+                 url('lokasi/file/fontBaru.woff2') format('woff2'),
+                 url('lokasi/file/fontBaru.woff') format('woff'),
+                 url('lokasi/file/fontBaru.ttf') format('truetype'),
+                 url('lokasi/file/fontBaru.otf') format('truetype'),
+                 url('lokasi/file/fontBaru.svg#svgFontName') format('svg'),
+        }
+        
+        Jenis file yang paling bagus untuk web adalah WOFF
+
+        layanan font 
+        fonts.google.com
+        fontsquirell.com (Mempunyai Web Font Generator -> mengubah TTF/OTF Jadi WOFF)
+        fontspring.com
+        webtype.com
+        typotheque.com
+        
+        selalu ingat pada license */
+
+        @font-face {
+            font-family: 'alex_brushregular';
+            src: url('alexbrush-regular-webfont.woff2') format('woff2'),
+                url('alexbrush-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            font-size: 100px;
+            text-align: center;
+            font-family: 'alex_brushregular', arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+</body>
+
+</html>

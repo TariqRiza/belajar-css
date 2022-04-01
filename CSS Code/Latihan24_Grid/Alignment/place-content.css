@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 120px 180px 120px;
+    grid-template-rows: 80px 80px 80px;
+    gap: 5px;
+    background-color: lightgreen;
+
+    /* shorthand justify-content dan align-content
+    place-content: <align-content> <justify-content> */
+    place-content: space-around space-between;
+}
+
+.items {
+    border: 3px solid #222;
+    width: 100px;
+    height: 50px;
+    background-color: lightblue;
+}

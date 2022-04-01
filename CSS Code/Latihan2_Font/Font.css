@@ -1,0 +1,23 @@
+/* Font
+font-family     : mengatur jenis font
+font-size       : mengatur ukuran font
+font-weight     : mengatur ketebalan font
+font-variant    : mengubah font menjadi small caps (huruf besar ukuran kecil)
+font-style      : mengubah font menjadi cetak miring
+line-height     : mengatur spasi antar baris*/
+
+/* Shorthand
+font: (font-style) (font-variant) (font-weight) (font-size/wajib)/(line-height) (font-family/wajib)
+font: italic normal bold 16px/18px helvetica, arial, sans-serif */
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 50px;
+}

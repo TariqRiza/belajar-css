@@ -1,0 +1,38 @@
+/* Absolute
+-ketika kita menggerakkan elemen dengan posisi absolute
+(menggunakan properti top, left, bottom, dan right), ruang
+yang ditempati oleh elemen tersebut dianggap tidak ada
+
+-ketika menggerakan elemen dengan posisi absolute, elemen
+akan bergerak relatif terhadap posisi dari elemen *parent-nya*
+(parent terdekat) ,selama elemen parent-nya memiliki posisi
+yang juga non-static */
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.container {
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    /* Position relatif digunakan agar .dua tidak keluar */
+    position: relative;
+}
+
+.satu {
+    background-color: lightgreen;
+}
+
+.dua {
+    background-color: violet;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tiga {
+    background-color: gold;
+}

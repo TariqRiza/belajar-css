@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 130px 130px 130px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+    /* shorthand untuk menulis justify-items dan align-items
+    place-items: <align-items> <justify-items>; */
+    place-items: center center;
+}
+
+.items {
+    border: 3px solid #222;
+    width: 150px;
+    background-color: lightblue;
+}
+
+.items.i1,
+.items.i4,
+.items.i7 {
+    height: 100px;
+}
+
+.items.i2,
+.items.i5,
+.items.i8 {
+    height: 50px;
+}
+
+.items.i3,
+.items.i6,
+.items.i9 {
+    height: 25px;
+}

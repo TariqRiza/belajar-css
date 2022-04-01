@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 120px 180px 120px;
+    grid-template-rows: 80px 80px 80px;
+    gap: 5px;
+    background-color: lightgreen;
+
+    /* untuk mengatur posisi container gridnya(bukan itemnya)
+    pada posisihorizontal */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: stretch; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+}
+
+.items {
+    border: 3px solid #222;
+    width: 100px;
+    height: 50px;
+    background-color: lightblue;
+}

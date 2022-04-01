@@ -1,0 +1,65 @@
+/* Pada container harus dibuat
+display: flex  terlebih dahulu
+flex-direction -> mengatur arah dari urutan elemen didalamnhya
+flex-direction: row(default), row-reverse, column, column-reverse
+
+flex-wrap -> mengatur ketika elemen yang dipunya tidak muat lagi dalam baris
+nowrap(default), wrap, wrap-reverse
+
+justify-content -> mengatur jarak antar item
+flex-start, flex-end, center, space-between, space-around, space-evenly
+
+align-items -> mengatur perilaku penjajaran item terhadap cross axis
+flex-start, flex-end, center, stretch, baseline
+
+align-content -> Mengatur jarak antar item terhadap cross axis (jika item lebih dari 1 baris)
+flex-start, flex-end, center, stretch, space-between, space-around, space-evenly */
+
+.container {
+    width: 600px;
+    height: 150px;
+    border: 5px solid #333;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* align-content: center; */
+}
+
+/* Property pada item
+order -> mengatur urutan pada item (semua awalnya ordernya 0)
+flex-grow / flex -> mengatur ukuran itemnya
+align-self -> mengatur perilaku penjajaran sebuah item yang sepifik terhadap cross axix */
+
+.container div {
+    /* line-height: 120px; */
+    /* width: 120px;
+    height: 120px; */
+    background-color: aqua;
+    margin: 2px;
+    text-align: center;
+    flex: 1;
+}
+
+/* .satu {order: 2;}
+.dua {order: 1;}
+.tiga {order: 4;}
+.empat {order: 3} */
+
+.container div.dua {
+    flex: 3;
+    align-self: flex-end;
+}
+
+/* .container div.tiga {
+    font-size: 60px;
+}
+
+.container div.empat
+ {
+    font-size: 100px;
+} */

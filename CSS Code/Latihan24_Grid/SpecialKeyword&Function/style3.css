@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    border: 5px solid orange;
+    display: grid;
+    /* Menentukan jumlah item untuk berada pada grid track
+    fit - menentukan akhir dari grid itu pada elemen terakhir
+    fill - akhir dari grid pada tempat kosong yang diperkirakan
+    akan muat jika da elemen tambahan */
+    grid-template-columns: repeat(auto-fill, 100px);
+}
+
+.item {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: salmon;
+}

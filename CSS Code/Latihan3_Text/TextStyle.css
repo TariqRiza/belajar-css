@@ -1,0 +1,25 @@
+/* Text
+color           : memberi warna pada tulisan (color, #hexa, rgb)
+text-align      : mengatur format paragraf/text (justify dll)
+text-indent     : memberi indentasi pada paragraf/text
+text-decoration : mengatur dekorasi pada text
+text-transform  : mengubah jenis hurud besar, kecil/kapital
+letter-spacing  : mengatur spasi antar huruf
+word-spacing    : mengatur spasi antar kata */
+
+h1 {
+    font-size: 79px;
+    color: plum;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+
+a {
+    text-decoration: none;
+}
